@@ -1,0 +1,95 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Global Styles */
+body {
+  background: #F2E9D6
+;
+  font-family: 'Palatino', sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-family: 'Times New Roman', serif;
+}
+
+/* Header */
+header nav {
+  background: #ac874d
+;
+  text-align: center;
+  padding: 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+  overflow: hidden;
+}
+
+header nav li {
+  float: left;
+  width: 25%;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+header nav li a {
+  display: block;
+  padding: 8px;
+  color: #053169
+;
+  text-decoration: none;
+}
+
+header nav li a:hover {
+  background: #ddd;
+}
+
+/* Gallery */ 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+footer {
+  background-color: #ee8d54cc; /* light burnt sienna color */
+}
+
+footer h2, footer p {
+  color: white; /* keep the text color white */
+}
+
+footer button {
+  background-color: white; /* make the button white */
+  border: none; /* remove the border */
+  color: #0e0d0d; /* make the button text light burnt sienna */
+  padding: 15px 32px; /* add some padding */
+  text-align: center; /* center the text */
+  text-decoration: none; /* remove the underline */
+  display: inline-block; /* make the button inline */
+  font-size: 16px; /* adjust the font size */
+  margin: 4px 2px; /* add some margin */
+  cursor: pointer; /* change the cursor to a pointer when hovering */
+}
+
+footer button:hover {
+  background-color: #ddd; /* change the button color when hovering */
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .gallery img {
+    width: 100%;
+  }
+}
